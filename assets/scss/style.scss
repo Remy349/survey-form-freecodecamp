@@ -1,0 +1,121 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+/* BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #417D7A;
+    color: #fff;
+}
+
+/* MAIN */
+
+.forms {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0 3rem;
+
+    &__container {
+        display: grid;
+        row-gap: 3rem;
+    }
+
+    &__header {
+        text-align: center;
+
+        &-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        &-description {
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+    }
+
+    &__form {
+        background-color: #1D5C63;
+        border-radius: .3rem;
+        padding: 2rem 3rem;
+        box-shadow: 0 4px 20px rgba(0,0,0,.1);
+        display: grid;
+        row-gap: 1.5rem;
+
+        &-inputs {
+            display: grid;
+            row-gap: 1rem;
+        }
+
+        &-label,
+        &-info {
+            font-size: 1.3rem;
+        }
+
+        &-input {
+            border: none;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.2rem;
+            color: #1D5C63;
+            outline: none;
+            padding: 1rem 2rem 1rem .7rem;
+            border-radius: .3rem;
+            font-weight: 600;
+        }
+
+        &-dropdown {
+            border: none;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.2rem;
+            color: #1D5C63;
+            outline: none;
+            border-radius: .3rem;
+            font-weight: 600;
+            padding: 1rem 2rem 1rem .7rem;
+        }
+
+        &-labelR {
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            column-gap: .5rem;
+        }
+
+        &-radio,
+        &-checkbox {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+
+        &-comment {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.2rem;
+            border: none;
+            outline: none;
+            border-radius: .3rem;
+            padding: 1rem .7rem 1rem .7rem;
+            color: #1D5C63;
+            resize: none;
+        }
+
+        &-btn {
+            color: #fff;
+            background-color: #417D7A;
+            width: 100%;
+            padding: .7rem 0;
+            text-align: center;
+            font-size: 1.2rem;
+            font-family: 'Nunito', sans-serif;
+            border: none;
+            outline: none;
+            border-radius: .3rem;
+            cursor: pointer;
+        }
+    }
+}

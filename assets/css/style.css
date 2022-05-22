@@ -1,0 +1,106 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+/* BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #417D7A;
+  color: #fff;
+}
+
+/* MAIN */
+.forms {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 3rem;
+}
+.forms__container {
+  display: grid;
+  row-gap: 3rem;
+}
+.forms__header {
+  text-align: center;
+}
+.forms__header-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.forms__header-description {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.forms__form {
+  background-color: #1D5C63;
+  border-radius: 0.3rem;
+  padding: 2rem 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: grid;
+  row-gap: 1.5rem;
+}
+.forms__form-inputs {
+  display: grid;
+  row-gap: 1rem;
+}
+.forms__form-label, .forms__form-info {
+  font-size: 1.3rem;
+}
+.forms__form-input {
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  color: #1D5C63;
+  outline: none;
+  padding: 1rem 2rem 1rem 0.7rem;
+  border-radius: 0.3rem;
+  font-weight: 600;
+}
+.forms__form-dropdown {
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  color: #1D5C63;
+  outline: none;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  padding: 1rem 2rem 1rem 0.7rem;
+}
+.forms__form-labelR {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.forms__form-radio, .forms__form-checkbox {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.forms__form-comment {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 1rem 0.7rem 1rem 0.7rem;
+  color: #1D5C63;
+  resize: none;
+}
+.forms__form-btn {
+  color: #fff;
+  background-color: #417D7A;
+  width: 100%;
+  padding: 0.7rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Nunito", sans-serif;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form - Programming Languages</title>
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- MAIN -->
+    <main class="main">
+        <section class="forms">
+            <div class="forms__container">
+                <div class="forms__header">
+                    <h1 class="forms__header-title" id="title">
+                        Favorite programming languages survey form
+                    </h1>
+                    <p class="forms__header-description" id="description">
+                        Thank you for taking the time to answer it
+                    </p>
+                </div>
+                <div class="forms__content">
+                    <form class="forms__form" id="survey-form">
+                        <div class="forms__form-inputs">
+                            <label class="forms__form-label" id="name-label" for="name">
+                                Name
+                            </label>
+                            <input 
+                                type="text" 
+                                name="name" 
+                                placeholder="Enter your name" 
+                                class="forms__form-input" 
+                                id="name" 
+                                autocomplete="off"
+                                required
+                            >
+                        </div>
+                        <div class="forms__form-inputs">
+                            <label class="forms__form-label" id="email-label" for="email">
+                                Email
+                            </label>
+                            <input 
+                                type="email" 
+                                name="email" 
+                                placeholder="Enter your email" 
+                                class="forms__form-input" 
+                                id="email" 
+                                autocomplete="off"
+                                required
+                            >
+                        </div>
+                        <div class="forms__form-inputs">
+                            <label class="forms__form-label" id="number-label" for="number">
+                                Age
+                            </label>
+                            <input 
+                                type="number" 
+                                name="age" 
+                                placeholder="Enter your age" 
+                                class="forms__form-input" 
+                                id="number" 
+                                autocomplete="off"
+                                min="10"
+                                max="60"
+                                required
+                            >
+                        </div>
+                        <div class="forms__form-inputs">
+                            <p class="forms__form-info">
+                                Which is your favorite programming language?
+                            </p>
+                            <select name="language" id="dropdown" class="forms__form-dropdown" required>
+                                <option disabled selected value>Select one of the following</option>
+                                <option value="python">Python</option>
+                                <option value="javascript">Javascript</option>
+                                <option value="csharp">CSharp - C#</option>
+                                <option value="java">Java</option>
+                                <option value="php">PHP</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="forms__form-inputs">
+                            <p class="forms__form-info">
+                                Why is your favorite?
+                            </p>
+                            <label class="forms__form-labelR">
+                                <input
+                                    type="checkbox"
+                                    value="easy-to-learn"
+                                    class="forms__form-checkbox"
+                                    name="prefer"
+                                >
+                                It´s easy to learn
+                            </label>
+                            <label class="forms__form-labelR">
+                                <input
+                                    type="checkbox"
+                                    value="have-to-write-a-lot-of-code"
+                                    class="forms__form-checkbox"
+                                    name="prefer"
+                                >
+                                I have to write a lot of code and i love that
+                            </label>
+                            <label class="forms__form-labelR">
+                                <input
+                                    type="checkbox"
+                                    value="fell-in-love-with-it"
+                                    class="forms__form-checkbox"
+                                    name="prefer"
+                                >
+                                Simple, I fell in love with it
+                            </label>
+                            <label class="forms__form-labelR">
+                                <input
+                                    type="checkbox"
+                                    value="so-many-knowledge"
+                                    class="forms__form-checkbox"
+                                    name="prefer"
+                                >
+                                It offer you so many knowledge
+                            </label>
+                        </div>
+                        <div class="forms__form-inputs">
+                            <p class="forms__form-info">
+                                Would you recommend that programming language?
+                            </p>
+                            <label class="forms__form-labelR">
+                                <input
+                                    type="radio"
+                                    value="definitely"
+                                    class="forms__form-radio"
+                                    name="recommend"
+                                    checked
+                                >
+                                Definitely
+                            </label>
+                            <label class="forms__form-labelR">
+                                <input
+                                    type="radio"
+                                    value="probably"
+                                    class="forms__form-radio"
+                                    name="recommend"
+                                >
+                                Probably
+                            </label>
+                            <label class="forms__form-labelR">
+                                <input
+                                    type="radio"
+                                    value="maybe"
+                                    class="forms__form-radio"
+                                    name="recommend"
+                                >
+                                Maybe
+                            </label>
+                            <label class="forms__form-labelR">
+                                <input
+                                    type="radio"
+                                    value="notsure"
+                                    class="forms__form-radio"
+                                    name="recommend"
+                                >
+                                Not sure
+                            </label>
+                        </div>
+                        <div class="forms__form-inputs">
+                            <p class="forms__form-info">
+                                What do you think about this survey form?
+                            </p>
+                            <textarea class="forms__form-comment" name="comment" id="comment" rows="6" placeholder="Enter your comment here..."></textarea>
+                        </div>
+                        <div class="forms__form-btns">
+                            <button class="forms__form-btn" id="submit" type="submit">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
